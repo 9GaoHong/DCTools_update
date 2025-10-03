@@ -1,0 +1,524 @@
+WZTo3LNu_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 5.257
+  mean_weight: 8.46839203155015
+  num_events: 10339582
+DY1JetsToLL_M-50_LHEZpT_150-250_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 9.480238706703638
+DY1JetsToLL_M-50_LHEZpT_250-400_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 1.092796793620117
+DY1JetsToLL_M-50_LHEZpT_400-inf_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.120689583175169
+DY1JetsToLL_M-50_LHEZpT_50-150_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 313.608562849390125
+DY2JetsToLL_M-50_LHEZpT_150-250_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 15.683493299980881
+DY2JetsToLL_M-50_LHEZpT_250-400_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 2.741273678370510
+DY2JetsToLL_M-50_LHEZpT_400-inf_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.446062646660613
+DY2JetsToLL_M-50_LHEZpT_50-150_TuneCP5_13TeV-amcnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 169.646518824308913
+DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 6545.062778193921076
+TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 88.29
+  mean_weight: 72.11066455530153
+  num_events: 106724000
+WZTo3LNu_TuneCP5_13TeV-powheg-pythia8: 
+  br: 1.0
+  kr: 0.615
+  xsec: 4.658000000000000
+  mean_weight: 8.46595435742713
+  num_events: 9821283
+    #UL
+ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.9738
+  mean_weight: 0.9737508952839198
+  num_events: 40839000
+#ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8: 
+#  br: 1.0
+#  kr: 1.0
+#  xsec: 0.600800000000000
+WWTo2L2Nu_NNPDF31_TuneCP5_13TeV-powheg-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 11.080000000000004
+  mean_weight: 11.086408810716117
+  num_events: 9994000
+GluGluToContinToZZTo2e2mu_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0031942
+GluGluToContinToZZTo2e2nu_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 0.01719
+  mean_weight: 1.0
+  num_events: 497000
+GluGluToContinToZZTo2e2tau_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 3.287763101653022
+GluGluToContinToZZTo2mu2nu_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 0.01719
+  mean_weight: 1.0
+  num_events: 500000
+GluGluToContinToZZTo2mu2tau_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 3.289473207009740
+GluGluToContinToZZTo4e_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 1.397460298310003
+GluGluToContinToZZTo4mu_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 1.399213095028897
+GluGluToContinToZZTo4tau_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 1.394319612255764
+WZZ_TuneCP5_13TeV-amcatnlo-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.057010000000000
+  mean_weight: 0.05716241201787614
+  num_events: 10196000
+ZZZ_TuneCP5_13TeV-amcatnlo-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.014730000000000
+  mean_weight: 0.014766067255209264
+  num_events: 9702000
+WWZ_TuneCP5_13TeV-amcatnlo-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.1707 
+TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.2163
+  mean_weight: 0.3351108176756212
+  num_events: 7140411
+TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.440367567607570
+TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.243200000000000
+  mean_weight: 0.24401100504394949
+  num_events: 14036000
+TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 0.510400000000000
+ZZTo4L_TuneCP5_13TeV_powheg_pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 1.325000000000000
+  mean_weight: 1.3247794425222204
+  num_events: 99388000
+ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 34.97
+ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 34.91
+ZZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 3.676
+WZTo2L2Q_13TeV_amcatnloFXFX_madspin_pythia8: 
+  br: 1.0
+  kr: 1.0
+  xsec: 6.411065047615857
+ggZH_ZToLL_HToInvisible_M125_TuneCP5_PSweights_13TeV_powheg_pythia8:
+  br: 0.101
+  kr: 1.0
+  xsec: 0.1227
+ZH_ZToMM_HToInvisible_M125_TuneCP5_PSweights_13TeV_powheg_pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec:  0.025627
+ZH_ZToEE_HToInvisible_M125_TuneCP5_PSweights_13TeV_powheg_pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.025627  
+WWW_4F_TuneCP5_13TeV-amcatnlo-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.2158
+  mean_weight: 0.2158590599733576
+  num_events: 10025000
+ZZJJ_ZZTo2L2Nu_EWK_dipoleRecoil_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.00308
+  mean_weight: 1.0
+  num_events: 400000  
+ZZ2JTo2L2Nu2J_EWK_aQGC_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 8.1782057e-07 
+#0.00308
+GluGluToContinToZZTo2e2mu_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.287
+GluGluToContinToZZTo2e2tau_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.29
+GluGluToContinToZZTo2mu2tau_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.289
+GluGluToContinToZZTo4e_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.4
+GluGluToContinToZZTo4mu_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.394
+GluGluToContinToZZTo4tau_13TeV_TuneCP5_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.404
+WLLJJ_WToLNu_EWK_TuneCP5_13TeV_madgraph-madspin-pythia8:
+  br: 1.0
+  kr: 1
+  xsec: 0.01628
+DYJetsToLL_M-50_HT-100to200_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 160.7
+DYJetsToLL_M-50_HT-1200to2500_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 0.1937
+DYJetsToLL_M-50_HT-200to400_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 48.63
+DYJetsToLL_M-50_HT-2500toInf_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 0.003514
+DYJetsToLL_M-50_HT-400to600_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 6.993
+DYJetsToLL_M-50_HT-600to800_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 1.761
+DYJetsToLL_M-50_HT-70to100_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 146.5
+DYJetsToLL_M-50_HT-800to1200_TuneCP5_PSweights_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.23
+  xsec: 0.8021
+# DY1JetsToLL_M-50_LHEZpT_150-250_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 9.543
+# DY1JetsToLL_M-50_LHEZpT_250-400_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 1.098
+# DY1JetsToLL_M-50_LHEZpT_400-inf_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 0.1193
+# DY1JetsToLL_M-50_LHEZpT_50-150_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 316.6
+# DY2JetsToLL_M-50_LHEZpT_150-250_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 15.65
+# DY2JetsToLL_M-50_LHEZpT_250-400_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 2.737
+# DY2JetsToLL_M-50_LHEZpT_400-inf_TuneCP5_13TeV-amcnloFXFX-pythia8:
+#   br: 1.0
+#   kr: 1.0
+#   xsec: 0.4477
+# DY2JetsToLL_M-50_LHEZpT_50-150_TuneCP5_13TeV-amcnloFXFX-pythia8:
+  # br: 1.0
+  # kr: 1.0
+  # xsec: 169.6
+DYJetsToLL_Pt-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 93.61
+DYJetsToLL_Pt-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 3.67
+DYJetsToLL_Pt-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.5
+DYJetsToLL_Pt-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 398.8
+DYJetsToLL_Pt-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.04704
+ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 32.51
+  mean_weight: 32.50808501495969
+  num_events: 8433998
+ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 32.45
+  mean_weight: 32.44559526497722
+  num_events: 8507203
+WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.1707
+  mean_weight: 0.1707568880077934
+  num_events: 10116400
+GluGluToContinToZZTo2e2mu_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.292
+GluGluToContinToZZTo2e2nu_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 17.73
+  mean_weight: 1.0
+  num_events: 500000
+GluGluToContinToZZTo2e2tau_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.294
+GluGluToContinToZZTo2mu2nu_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 17.73
+  mean_weight: 1.0
+  num_events: 500000
+GluGluToContinToZZTo2mu2tau_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 3.294
+GluGluToContinToZZTo4e_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.619
+GluGluToContinToZZTo4mu_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.608
+GluGluToContinToZZTo4tau_TuneCP5_13TeV-mcfm701-pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 1.626
+WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 11.09
+  mean_weight: 11.086161589587295
+  num_events: 7098000
+GluGluToWWToENEN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+  mean_weight: 1.0
+  num_events: 3780000
+GluGluToWWToENMN_TuneCP5_13TeV_MCFM701_pythia8: 
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+GluGluToWWToENTN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+GluGluToWWToMNMN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+  mean_weight: 1.0
+  num_events: 3978000 
+GluGluToWWToMNEN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+GluGluToWWToMNTN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+GluGluToWWToTNMN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+GluGluToWWToTNTN_TuneCP5_13TeV_MCFM701_pythia8:
+  br: 1.0
+  kr: 0.001
+  xsec: 0.0368
+VBS_OSWW_LL_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.04789
+VBS_OSWW_TT_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.2466
+VBS_OSWW_TL_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.07368
+VBS_OSWW_LT_TuneCP5_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.0727
+DYJetsToTauTau_M-50_AtLeastOneEorMuDecay_massWgtFix_TuneCP5_13TeV-powhegMiNNLO-pythia8-photos:
+  br: 1.0
+  kr: 1.0
+  xsec: 583
+DYJetsToLL_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 5129
+DYJetsToLL_1J_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 951.5
+DYJetsToLL_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 361.4
+DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 5398.0
+# DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  # br: 1.0
+  # kr: 1.0
+  # xsec: 6404.0
+EWKZ2Jets_ZToLL_M-50_TuneCP5_withDipoleRecoil_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 6.215
+EWKWPlus2Jets_WToLNu_M-50_TuneCP5_withDipoleRecoil_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 39.05
+EWKWMinus2Jets_WToLNu_M-50_TuneCP5_withDipoleRecoil_13TeV-madgraph-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 32.05
+WZJJ_EWK_InclusivePolarization_TuneCP5_13TeV_madgraph-madspin-pythia8:
+  br: 1.0 
+  kr: 1.0 
+  xsec: 0.01627
+ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 3.549
+  mean_weight: 3.5507590090400147
+  num_events: 13620000
+tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.07561
+  mean_weight: 0.0774000527861236
+  num_events: 9530000
+DYJetsToLL_LHEFilterPtZ-0To50_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 1485.0
+  mean_weight: 12381.7743315185
+  num_events: 198059258
+DYJetsToLL_LHEFilterPtZ-100To250_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 97.2
+  mean_weight: 601.4611598855347
+  num_events: 63189425
+DYJetsToLL_LHEFilterPtZ-250To400_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 3.701
+  mean_weight: 15.292466302611249
+  num_events: 23875051
+DYJetsToLL_LHEFilterPtZ-400To650_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.5086
+  mean_weight: 1.7091255302347603
+  num_events: 4042549
+DYJetsToLL_LHEFilterPtZ-50To100_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 397.4
+  mean_weight: 4697.383701211556
+  num_events: 120971372
+DYJetsToLL_LHEFilterPtZ-650ToInf_MatchEWPDG20_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.04728
+  mean_weight: 0.16440326350386347
+  num_events: 4034670
+ZZTo2E2Nu_TuneCP5_DipoleRecoil_13TeV_powheg_pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.001583
+  mean_weight: 0.0019926983915991778
+  num_events: 499109
+ZZTo2Mu2Nu_TuneCP5_DipoleRecoil_13TeV_powheg_pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 0.001583
+  mean_weight: 0.0018975115360302431
+  num_events: 490500
+ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 51.53
+  mean_weight: 98.42800955252052
+  num_events: 29890946
