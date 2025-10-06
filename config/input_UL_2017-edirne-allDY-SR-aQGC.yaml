@@ -132,7 +132,7 @@ groups:
 #       "#98a100"
   eft_ZZ2l2nu:
     processes:
-      - ZZ2JTo2L2Nu2J_EWK_aQGC_TuneCP5_13TeV-madgraph-pythia8
+      - ZZTo2L2Nu_TuneCP5_13TeV_powheg_pythia8
     type:
       signal
     color:
