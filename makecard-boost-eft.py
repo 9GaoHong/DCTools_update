@@ -214,7 +214,7 @@ def main():
             year = options.era.replace('APV','')
             era_s = options.era.replace('APV','preVFP')
             
-            if "DY" in p.name and options.dd:
+            if "DY" in p.name:
                 card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}",p.get(f"dataDrivenDYRatio_{year}"), symmetrise=False)
                 # card.add_auto_stat()
                 continue
