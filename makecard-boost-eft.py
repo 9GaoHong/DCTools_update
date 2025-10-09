@@ -214,12 +214,18 @@ def main():
             year = options.era.replace('APV','')
             era_s = options.era.replace('APV','preVFP')
             
-            card.add_log_normal_lumi(p.name, f"lumi_{year}", config.luminosity.uncer)
-            card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated)
-            if "16" not in year:
-                card.add_log_normal_lumi(p.name, f"lumi_13TeV_1718", config.luminosity.uncer_correlated1718)
-                
-            
+            if "DY" in p.name and options.dd:
+                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}",p.get(f"dataDrivenDYRatio_{year}"), symmetrise=False)
+                # card.add_auto_stat()
+                continue
+
+
+            if 'WW' not in p.name and 'WZ' not in p.name and 'DY' not in p.name and 'Top' not in p.name:
+                card.add_log_normal_lumi(p.name, f"lumi_{year}", config.luminosity.uncer)
+                card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated)
+                if "16" not in year:
+                    card.add_log_normal_lumi(p.name, f"lumi_13TeV_1718", config.luminosity.uncer_correlated1718)
+
             # interference between QCD and EWK
             card.add_log_normal(p.name, f"CMS_SMP23001_Interference_{options.era}", 1.0798)
             
