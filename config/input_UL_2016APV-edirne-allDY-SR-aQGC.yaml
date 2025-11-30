@@ -6,7 +6,7 @@ boosthist:
   #- ./data/merged-histogram-tromso-2018-withDD.pkl.gz
   #- ./data/merged-histogram-cape-2018-withDD.pkl.gz
   #- ./data/merged-histogram-nesa-2016APV.pkl.gz
-  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_1002_addDD_SR_EM_3L.pkl.gz
+  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_1126_SR_plot.pkl.gz
     
 xsections:
   !include ./config/xsections_2016APV.yaml
@@ -34,6 +34,8 @@ groups:
       "#46B3A5"
   Top:
     processes:
+      - ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8
+      - ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8
       - ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
       - ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
       - ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8
@@ -41,6 +43,7 @@ groups:
       - TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8
       - TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8
       - TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8
+      - TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8
     type:
       background
     color:

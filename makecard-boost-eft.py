@@ -228,7 +228,11 @@ def main():
 
             # interference between QCD and EWK
             card.add_log_normal(p.name, f"CMS_SMP23001_Interference_{options.era}", 1.0798)
-            
+
+            # HEM 15/16 
+            if "18" in year:
+            card.add_shape_nuisance(p.name, f"CMS_HEM_2018"  , p.get("HEM"), symmetrise=False)
+
             # scale factors / resolution
             card.add_shape_nuisance(p.name, f"CMS_res_e_{year}"  , p.get("ElectronEn"), symmetrise=True)
             card.add_shape_nuisance(p.name, f"CMS_scale_m"  , p.get("MuonRoc")   , symmetrise=True)
