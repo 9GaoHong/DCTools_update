@@ -526,3 +526,15 @@ VBS_QCD_Interference_RunIISummer20UL18wmLHEGEN:
   br: 1.0
   kr: 1.0
   xsec: 0.00021510000
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 67.93
+  mean_weight: 63.94489307543895
+  num_events: 95627000
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 119.7
+  mean_weight: 106.29420132222322
+  num_events: 178336000
