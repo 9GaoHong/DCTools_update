@@ -179,7 +179,7 @@ def main():
         for _, p in datasets.items():
             # print(p.name,p.get("nominal").sum().value)
             if 'eft' in p.name:
-                with gzip.open(f"/eos/user/h/hgao/ZZTo2L2Nu/PKL/aQGC/{options.era}/{eftn}.pkl.gz", 'rb') as f:
+                with gzip.open(f"/eos/user/h/hgao/ZZTo2L2Nu/PKL/aQGC-new/{options.era}/{eftn}.pkl.gz", 'rb') as f:
                     file_data = pickle.load(f)
       
                 histograms = dict(
