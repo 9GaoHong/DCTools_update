@@ -524,3 +524,15 @@ ZGToLLG_01J_5f_TuneCP5_13TeV-amcatnloFXFX-pythia8:
   xsec: 51.53
   mean_weight: 98.42800955252052
   num_events: 29890946
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 67.93
+  mean_weight: 63.94340753370682
+  num_events: 69793000
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 119.7
+  mean_weight: 106.29525928144461
+  num_events: 129903000
