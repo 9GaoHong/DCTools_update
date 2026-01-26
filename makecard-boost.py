@@ -298,22 +298,16 @@ def main():
                     break
                 qcd_shapes.append(variation)
             if not missing_qcd and len(qcd_shapes) == 3:
-                if 'NLO' in p.name:
-                    card.add_qcd_scales(
-                        p.name, f"QCDscale_{p.name}",
-                        qcd_shapes,normalize_to_nominal=True
-                    )
-                else:
-                    card.add_qcd_scales(
-                        p.name, f"QCDscale_{p.name}",
-                        qcd_shapes#,normalize_to_nominal=True
-                    )
+                card.add_qcd_scales(
+                    p.name, f"QCDscale_{p.name}",
+                    qcd_shapes
+                )
 
         
         # PDF uncertaintites / not working for the moment
     
         if 'NLO' in p.name: 
-            card.add_shape_nuisance(p.name, f"CMS_SMP23001_pdf_{p.name}"   , p.get("PDF_weight"), symmetrise=False,normalize_to_nominal=True)
+            card.add_shape_nuisance(p.name, f"CMS_SMP23001_pdf_{p.name}"   , p.get("PDF_weight"), symmetrise=False)
         else:
             card.add_shape_nuisance(p.name, f"CMS_SMP23001_pdf_{p.name}"   , p.get("PDF_weight"), symmetrise=False)
         card.add_shape_nuisance(p.name, f"CMS_SMP23001_alphaS_{p.name}", p.get("aS_weight" ), symmetrise=False)        
