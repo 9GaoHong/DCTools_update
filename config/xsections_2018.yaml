@@ -322,39 +322,39 @@ WWZ_4F_TuneCP5_13TeV-amcatnlo-pythia8:
   num_events: 10209999
 GluGluToContinToZZTo2e2mu_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 3.292
 GluGluToContinToZZTo2e2nu_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
-  xsec: 17.73
+  kr: 2.04077
+  xsec: 0.0171871
   mean_weight: 1.0
   num_events: 500000
 GluGluToContinToZZTo2e2tau_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 3.294
 GluGluToContinToZZTo2mu2nu_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
-  xsec: 17.73
+  kr: 2.04077
+  xsec: 0.0171871
   mean_weight: 1.0
   num_events: 500000
 GluGluToContinToZZTo2mu2tau_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 3.294
 GluGluToContinToZZTo4e_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 1.619
 GluGluToContinToZZTo4mu_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 1.608
 GluGluToContinToZZTo4tau_TuneCP5_13TeV-mcfm701-pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.04077
   xsec: 1.626
 WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8:
   br: 1.0
@@ -364,39 +364,41 @@ WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8:
   num_events: 9994000
 GluGluToWWToENEN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
   mean_weight: 1.0
   num_events: 4904000
-GluGluToWWToENMN_TuneCP5_13TeV_MCFM701_pythia8: 
+GluGluToWWToENMN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 4.538
   xsec: 0.0368
+  mean_weight: 1.0
+  num_events: 1202000
 GluGluToWWToENTN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
 GluGluToWWToMNMN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
   mean_weight: 1.0
-  num_events: 4986000 
+  num_events: 4986000
 GluGluToWWToMNEN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
 GluGluToWWToMNTN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
 GluGluToWWToTNMN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
 GluGluToWWToTNTN_TuneCP5_13TeV_MCFM701_pythia8:
   br: 1.0
-  kr: 0.001
+  kr: 2.269
   xsec: 0.0368
 VBS_OSWW_LL_TuneCP5_13TeV-madgraph-pythia8:
   br: 1.0
@@ -524,3 +526,15 @@ VBS_QCD_Interference_RunIISummer20UL18wmLHEGEN:
   br: 1.0
   kr: 1.0
   xsec: 0.00021510000
+ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 67.93
+  mean_weight: 63.94489307543895
+  num_events: 95627000
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8:
+  br: 1.0
+  kr: 1.0
+  xsec: 119.7
+  mean_weight: 106.29420132222322
+  num_events: 178336000

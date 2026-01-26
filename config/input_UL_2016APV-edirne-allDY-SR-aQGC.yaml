@@ -6,7 +6,7 @@ boosthist:
   #- ./data/merged-histogram-tromso-2018-withDD.pkl.gz
   #- ./data/merged-histogram-cape-2018-withDD.pkl.gz
   #- ./data/merged-histogram-nesa-2016APV.pkl.gz
-  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_1002_addDD_SR_EM_3L.pkl.gz
+  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_1218_SR_newNNLO.pkl.gz
     
 xsections:
   !include ./config/xsections_2016APV.yaml
@@ -20,6 +20,14 @@ groups:
   WW:
     processes:
       - WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8
+      - GluGluToWWToENEN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToENMN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToENTN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToMNMN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToMNEN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToMNTN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToTNMN_TuneCP5_13TeV_MCFM701_pythia8
+      - GluGluToWWToTNTN_TuneCP5_13TeV_MCFM701_pythia8
     type:
       background
     color:
@@ -34,17 +42,16 @@ groups:
       "#46B3A5"
   Top:
     processes:
+      - ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8
+      - ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8
       - ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
       - ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8
-      - ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8/.root
-      - ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8
       - ST_s-channel_4f_leptonDecays_TuneCP5_13TeV-amcatnlo-pythia8
       - tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8
       - TTTo2L2Nu_TuneCP5_13TeV-powheg-pythia8
       - TTWJetsToLNu_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8
-      - TTWJetsToQQ_TuneCP5_13TeV-amcatnloFXFX-madspin-pythia8
-      - TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8
       - TTZToQQ_TuneCP5_13TeV-amcatnlo-pythia8
+      - TTZToLLNuNu_M-10_TuneCP5_13TeV-amcatnlo-pythia8
     type:
       background
     color:
@@ -68,14 +75,6 @@ groups:
       - GluGluToContinToZZTo4tau_TuneCP5_13TeV-mcfm701-pythia8
       - GluGluToContinToZZTo2e2nu_TuneCP5_13TeV-mcfm701-pythia8
       - GluGluToContinToZZTo2mu2nu_TuneCP5_13TeV-mcfm701-pythia8
-      - GluGluToWWToENEN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToENMN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToENTN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToMNMN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToMNEN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToMNTN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToTNMN_TuneCP5_13TeV_MCFM701_pythia8
-      - GluGluToWWToTNTN_TuneCP5_13TeV_MCFM701_pythia8
     type:
       background
     color:
@@ -142,7 +141,7 @@ groups:
       - DoubleMuon
       - SingleMuon
       - DoubleEG
-      - SingleMuon
+      - SingleElectron
     type:
       data
     color:

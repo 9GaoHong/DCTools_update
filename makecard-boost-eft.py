@@ -163,6 +163,31 @@ def main():
     output_file = f"cards-eft_ZZ2l2nu/{options.era}_rate.txt"
     with open('eft-names.dat') as eft_file:
         eftnames = [n.strip() for n in eft_file.readlines()]
+    def _scale_dd_uncertainty(shape_tuple, year_tag):
+        """
+        Rescale DD ratio up/down shapes so their integrals match the
+        dedicated MET-bin uncertainties used when deriving the weights.
+        """
+        if not isinstance(shape_tuple, tuple) or len(shape_tuple) != 2:
+            return shape_tuple
+        up_hist, down_hist = shape_tuple
+        if up_hist is None or down_hist is None:
+            return shape_tuple
+
+        year_str = str(year_tag)
+        if '2016' in year_str:
+            low_up, low_down = 1.086, 0.924
+        elif year_str in ('2017', '2018'):
+            low_up, low_down = 1.019, 0.983
+        else:
+            return shape_tuple
+
+        def _apply(hist_obj, factor):
+            return hist_obj * factor
+
+        scaled_up = _apply(up_hist, low_up)
+        scaled_down = _apply(down_hist, low_down)
+        return (scaled_up, scaled_down)
     for eftn in tqdm(eftnames):
         card_name = options.channel+options.era+eftn
 
@@ -179,7 +204,7 @@ def main():
         for _, p in datasets.items():
             # print(p.name,p.get("nominal").sum().value)
             if 'eft' in p.name:
-                with gzip.open(f"/eos/user/h/hgao/ZZTo2L2Nu/PKL/aQGC/{options.era}/{eftn}.pkl.gz", 'rb') as f:
+                with gzip.open(f"/eos/user/h/hgao/ZZTo2L2Nu/PKL/aQGC-new/{options.era}/{eftn}.pkl.gz", 'rb') as f:
                     file_data = pickle.load(f)
       
                 histograms = dict(
@@ -214,15 +239,27 @@ def main():
             year = options.era.replace('APV','')
             era_s = options.era.replace('APV','preVFP')
             
-            card.add_log_normal_lumi(p.name, f"lumi_{year}", config.luminosity.uncer)
-            card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated)
-            if "16" not in year:
-                card.add_log_normal_lumi(p.name, f"lumi_13TeV_1718", config.luminosity.uncer_correlated1718)
-                
-            
+            if "DY" in p.name:
+                dd_shape = p.get(f"dataDrivenDYRatio_{year}")
+                dd_shape = _scale_dd_uncertainty(dd_shape, year)
+                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False)
+                # card.add_auto_stat()
+                continue
+
+
+            if 'WW' not in p.name and 'WZ' not in p.name and 'DY' not in p.name and 'Top' not in p.name:
+                card.add_log_normal_lumi(p.name, f"lumi_{year}", config.luminosity.uncer)
+                card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated)
+                if "16" not in year:
+                    card.add_log_normal_lumi(p.name, f"lumi_13TeV_1718", config.luminosity.uncer_correlated1718)
+
             # interference between QCD and EWK
             card.add_log_normal(p.name, f"CMS_SMP23001_Interference_{options.era}", 1.0798)
-            
+
+            # HEM 15/16 
+            if "18" in year:
+            card.add_shape_nuisance(p.name, f"CMS_HEM_2018"  , p.get("HEM"), symmetrise=False)
+
             # scale factors / resolution
             card.add_shape_nuisance(p.name, f"CMS_res_e_{year}"  , p.get("ElectronEn"), symmetrise=True)
             card.add_shape_nuisance(p.name, f"CMS_scale_m"  , p.get("MuonRoc")   , symmetrise=True)
