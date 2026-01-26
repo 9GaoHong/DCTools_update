@@ -163,6 +163,31 @@ def main():
     output_file = f"cards-eft_ZZ2l2nu/{options.era}_rate.txt"
     with open('eft-names.dat') as eft_file:
         eftnames = [n.strip() for n in eft_file.readlines()]
+    def _scale_dd_uncertainty(shape_tuple, year_tag):
+        """
+        Rescale DD ratio up/down shapes so their integrals match the
+        dedicated MET-bin uncertainties used when deriving the weights.
+        """
+        if not isinstance(shape_tuple, tuple) or len(shape_tuple) != 2:
+            return shape_tuple
+        up_hist, down_hist = shape_tuple
+        if up_hist is None or down_hist is None:
+            return shape_tuple
+
+        year_str = str(year_tag)
+        if '2016' in year_str:
+            low_up, low_down = 1.086, 0.924
+        elif year_str in ('2017', '2018'):
+            low_up, low_down = 1.019, 0.983
+        else:
+            return shape_tuple
+
+        def _apply(hist_obj, factor):
+            return hist_obj * factor
+
+        scaled_up = _apply(up_hist, low_up)
+        scaled_down = _apply(down_hist, low_down)
+        return (scaled_up, scaled_down)
     for eftn in tqdm(eftnames):
         card_name = options.channel+options.era+eftn
 
@@ -215,7 +240,9 @@ def main():
             era_s = options.era.replace('APV','preVFP')
             
             if "DY" in p.name:
-                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}",p.get(f"dataDrivenDYRatio_{year}"), symmetrise=False)
+                dd_shape = p.get(f"dataDrivenDYRatio_{year}")
+                dd_shape = _scale_dd_uncertainty(dd_shape, year)
+                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False)
                 # card.add_auto_stat()
                 continue
 
