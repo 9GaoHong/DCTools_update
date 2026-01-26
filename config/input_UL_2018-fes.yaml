@@ -1,6 +1,6 @@
 boosthist:
   # - ./data/merged-histogram-fes-2018.pkl.gz
-  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2018_20260122_addDD_unc_SR.pkl.gz
+  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2018_1218_SR_newNNLO.pkl.gz
    #0805_SR_addDD.pkl.gz 
     
 xsections:

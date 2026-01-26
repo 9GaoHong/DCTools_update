@@ -1,6 +1,6 @@
 boosthist:
   # - ./data/merged-histogram-fes-2016APV.pkl.gz
-  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_20260125_addDD_unc_SR.pkl.gz
+  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016APV_1218_SR_newNNLO.pkl.gz
 
 xsections:
   !include ./config/xsections_2016APV.yaml

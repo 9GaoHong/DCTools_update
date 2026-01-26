@@ -1,6 +1,6 @@
 boosthist:
   # - ./data/merged-histogram-fes-2016.pkl.gz
-  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016_20260125_addDD_unc_SR.pkl.gz #2016_1218_SR_newNNLO.pkl.gz
+  - /eos/user/h/hgao/ZZTo2L2Nu/PKL/2016_1218_SR_newNNLO.pkl.gz #2016_1218_SR_newNNLO.pkl.gz
 xsections:
   !include ./config/xsections_2016.yaml
 

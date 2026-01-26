@@ -208,7 +208,7 @@ def main():
 
         scaled_up = _apply(up_hist, low_up)
         scaled_down = _apply(down_hist, low_down)
-        return (scaled_up, scaled_down
+        return (scaled_up, scaled_down)
 
     for pname in sorted(process_names):
         per_era_groups = {
@@ -267,7 +267,7 @@ def main():
             )
             if shape:
                 dd_shape = _scale_dd_uncertainty(shape, year)
-                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False
+                card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False)
                 #card.add_shape_nuisance(
                 #    pname,
                 #    f"CMS_SMP23001_DY_dd_uncert_{year_common}",
