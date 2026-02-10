@@ -241,7 +241,7 @@ def main():
             
             if "DY" in p.name:
                 dd_shape = p.get(f"dataDrivenDYRatio_{year}")
-                dd_shape = _scale_dd_uncertainty(dd_shape, year)
+                # dd_shape = _scale_dd_uncertainty(dd_shape, year)
                 card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False)
                 # card.add_auto_stat()
                 continue

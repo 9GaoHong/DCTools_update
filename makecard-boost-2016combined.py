@@ -266,7 +266,7 @@ def main():
                 nominals
             )
             if shape:
-                dd_shape = _scale_dd_uncertainty(shape, year)
+                # dd_shape = _scale_dd_uncertainty(shape, year)
                 card.add_shape_nuisance(p.name, f"CMS_SMP23001_DY_dd_uncert_{year}", dd_shape, symmetrise=False)
                 #card.add_shape_nuisance(
                 #    pname,
