@@ -14,9 +14,7 @@ xsections:
 luminosity:
   # from : https://docs.google.com/presentation/d/1gEF2jExqS1hWs-dlYgxrTT2xQztYbBZcrLdw45Aiy7g/edit#slide=id.gaa4333d304_0_0
   value: 59.83
-  uncer: 1.015
-  uncer_correlated1718: 1.002
-  uncer_correlated: 1.02
+  uncer_correlated_161718: 1.0084
 
 groups:
   WW:

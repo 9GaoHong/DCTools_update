@@ -13,9 +13,10 @@ xsections:
   !include ./config/xsections_2016.yaml
 
 luminosity: 
-  value: 16.5 
-  uncer: 1.01
-  uncer_correlated: 1.006
+  value: 19.5
+  uncer: 1.0118
+  uncer_correlated_1617: 1.0004
+  uncer_correlated_161718: 1.0035
 
 groups:
   WW:

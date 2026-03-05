@@ -248,10 +248,12 @@ def main():
 
 
             if 'WW' not in p.name and 'WZ' not in p.name and 'DY' not in p.name and 'Top' not in p.name:
-                card.add_log_normal_lumi(p.name, f"lumi_{year}", config.luminosity.uncer)
-                card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated)
-                if "16" not in year:
-                    card.add_log_normal_lumi(p.name, f"lumi_13TeV_1718", config.luminosity.uncer_correlated1718)
+                card.add_log_normal_lumi(p.name, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated_161718)
+                if "2016" in era_s:
+                    card.add_log_normal_lumi(p.name, f"lumi_2016", config.luminosity.uncer)
+                    card.add_log_normal_lumi(p.name, f"lumi_13TeV_1617", config.luminosity.uncer_correlated_1617)
+                elif "2017" in era_s:
+                    card.add_log_normal_lumi(p.name, f"lumi_13TeV_1617", config.luminosity.uncer_correlated_1617)
 
             # interference between QCD and EWK
             card.add_log_normal(p.name, f"CMS_SMP23001_Interference_{options.era}", 1.0798)

@@ -278,15 +278,11 @@ def main():
             continue
 
         if 'WW' not in pname and 'WZ' not in pname and 'DY' not in pname and 'Top' not in pname:
-            config_ref = configs["2016"]
-            card.add_log_normal_lumi(pname, f"lumi_{year_common}", config_ref.luminosity.uncer)
-            card.add_log_normal_lumi(pname, "lumi_13TeV_correlated", config_ref.luminosity.uncer_correlated)
-            if "16" not in year_common:
-                card.add_log_normal_lumi(
-                    pname,
-                    "lumi_13TeV_1718",
-                    config_ref.luminosity.uncer_correlated1718
-                )
+            config = configs["2016"]
+          
+            card.add_log_normal_lumi(pname, f"lumi_2016", config.luminosity.uncer)
+            card.add_log_normal_lumi(pname, f"lumi_13TeV_1617", config.luminosity.uncer_correlated_1617)
+            card.add_log_normal_lumi(pname, f"lumi_13TeV_correlated", config.luminosity.uncer_correlated_161718)
 
         for era in valid_groups:
             card.add_log_normal(pname, f"CMS_SMP23001_Interference_{era}", 1.0798)

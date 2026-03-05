@@ -8,8 +8,9 @@ xsections:
 
 luminosity: 
   value: 19.5
-  uncer: 1.01
-  uncer_correlated: 1.006
+  uncer: 1.0118
+  uncer_correlated_1617: 1.0004
+  uncer_correlated_161718: 1.0035
 
 
 
